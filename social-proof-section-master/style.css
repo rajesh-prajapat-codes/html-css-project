@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+   font-family: "League Spartan", sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  height: auto;
+  margin: 6% auto;
+  padding-bottom: 5rem;
+}
+
+.main-container{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content{
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content h1{
+  font-size: 70px;
+  color: hsl(300, 43%, 22%);
+}
+
+.content p{
+  font-size: 25px;
+  color: gray;
+  line-height: 2.1rem;
+}
+
+.ratings{
+  display: flex;
+  flex-direction: column;
+      justify-content: flex-end;
+    align-items: flex-end;
+  gap: 1rem;
+}
+
+.rating-container{
+  max-width: 100%;
+  
+}
+
+.rating1-container{
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  background-color:  hsl(300, 24%, 96%);
+  padding: 20px 50px;
+  margin-right: 6rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+
+}
+
+.rating1-container .one img{
+   width: 25px;
+}
+.rating1-container .two{
+   font-size: 23px;
+   color: hsl(300, 43%, 22%);;
+   font-weight: 600;
+}
+.rating2-container .one img{
+   width: 25px;
+}
+.rating2-container .two{
+   font-size: 23px;
+   color: hsl(300, 43%, 22%);;
+   font-weight: 600;
+}
+
+.rating2-container{
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  background-color:  hsl(300, 24%, 96%);
+  padding: 20px 50px;
+  margin-right: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+.rating3-container .one img{
+   width: 25px;
+}
+.rating3-container .two{
+   font-size: 23px;
+   color: hsl(300, 43%, 22%);;
+   font-weight: 600;
+}
+
+.rating3-container{
+  display: flex;
+  flex-direction: row;
+  gap: 2.1rem;
+  background-color:  hsl(300, 24%, 96%);
+  padding: 20px 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.image-card-container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+  gap: 3%;
+}
+
+.image1-container{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  width: 32%;
+  padding: 50px;
+  border-radius: 10px;
+  height: 300px;
+
+}
+
+.image-content{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.h2{
+  color: rgb(227, 226, 226);
+}
+
+.h3{
+  color: hsl(333, 40%, 45%);
+}
+
+.image-content img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+.image2-container{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  width: 32%;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 2rem;
+  height: 300px;
+  
+}
+
+.image2-container p{
+  color: rgb(205, 205, 205);
+  margin-top: 2rem;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+.image3-container{
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  width: 32%;
+  padding: 50px;
+  border-radius: 10px;
+  margin-top: 4rem;
+  height: 300px;
+  
+}
+
+.image3-container p{
+  color: rgb(205, 205, 205);
+  margin-top: 2rem;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+.image1-container p{
+  color: rgb(205, 205, 205);
+  margin-top: 2rem;
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
+
+
+
+/* 1450px and below */
+@media (max-width: 1450px) and (min-width: 991px) {
+  .content {
+  max-width: 30%;
+  }
+
+  .rating-container{
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .rating1-container,
+  .rating2-container,
+  .rating3-container {
+            padding: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        width: 80%;
+       
+        
+        gap: 0.7rem;
+  }
+}
+
+@media (max-width: 1270px) {
+   .image1-container,
+   .image2-container,
+   .image3-container{
+    height: 400px;
+   }
+}
+
+@media (max-width: 990px) {
+   .image-card-container{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .content{
+    max-width: 100%;
+   }
+
+   .main-container{
+    display: flex;
+    flex-direction: column;
+   }
+   .content {
+    width: 100%;
+   }
+
+   .rating{
+    max-width: 100%;
+   }
+
+   .rating-container{
+    gap: 3rem;
+    width: 100%;
+    max-width: 100%;
+   }
+
+   .rating1-container,
+   .rating2-container,
+   .rating3-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: 100%;
+    gap: 1rem;
+    width: 100%;
+
+   }
+
+   .image-card-container{
+    width: 100%;
+    gap: 0.2rem;
+   }
+   .image1-container
+   {
+    width: 100%;
+    height: 230px;
+    gap: 0.2rem;
+    padding: 20px;
+   }
+
+   .image3-container{
+      margin-top: 20px;
+      width: 100%;
+    height: 230px;
+    gap: 0.2rem;
+    padding: 20px;
+   }
+
+   .image2-container{
+      margin-top: 10px;
+      width: 100%;
+    height: 230px;
+    gap: 0.2rem;
+    padding: 20px;
+   }
+
+
+}
+
+@media (max-width: 425px) {
+  .image1-container,
+   .image2-container,
+   .image3-container{
+    width: 100%;
+    height: 350px;
+    gap: 0.5rem;
+    padding: 20px;
+   }
+
+   .content h1 {
+      font-size: 50px;
+   }
+
+   .content p{
+  font-size: 20px;
+  color: gray;
+  line-height: 2.1rem;
+}
+
+.rating1-container .two,
+.rating2-container .two,
+.rating3-container .two{
+   font-size: 23px;
+  
+}
+
+
+}
+@media (max-width: 290px) {
+  .image1-container,
+   .image2-container,
+   .image3-container{
+    width: 100%;
+    height: 450px;
+    gap: 0.5rem;
+    padding: 20px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
